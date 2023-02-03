@@ -1,0 +1,137 @@
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Anton', sans-serif;
+    color: 000;
+    font-size: 16px;
+}
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    text-transform: uppercase;
+}
+.offer h1{
+    color:white;
+    margin-top: -30px; 
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 151px;
+}
+h2{
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 75px;
+}
+h3{
+    font-weight: 400;
+    font-size: 25px;
+    line-height: 38px;
+}
+.offer p{
+    color:white;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 45px;
+    letter-spacing: 0.1em;
+}
+ul, li {
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+.container {
+    margin-right: 216px;
+    width: 1170px;
+    /*позиционирование по центру*/
+    margin: 0 auto;
+    padding-top: 57px;
+}
+.header {
+    background: url('../images/header-bg.jpg') no-repeat center top/cover;
+    height: 900px;
+}
+.header a {
+    color: white;
+}
+.menu {
+    display: flex;
+}
+.menu li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+}
+.menu li {
+    margin-right: 40px;
+}
+.logo {
+    margin-right: 69px;
+}
+.tel {
+    font-size: 17px;
+    text-decoration: none;
+    margin-left: auto;
+    letter-spacing: 0.1em; 
+}
+.nav {
+    display: flex;
+    align-items: center;
+}
+.offer{
+    margin-top: 216px;
+}
+.btn{
+    margin-top: 19px; 
+    font-family: 'Anton', sans-serif;
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    text-align: center;
+    padding: 17px 23px;
+    letter-spacing: 0.1em; 
+    display: block;
+    position: absolute;
+    width: 238px;
+    border: 1px solid #FFFFFF;
+}
+.about{
+    margin-top: 56px;
+}
+.about p{
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+}
+.text-block{
+    display: flex;
+    margin-top: 58px;
+}
+.text-one{
+    margin-right: 36px;
+}
+.text-one p{
+    margin-top: 19px;
+}
+.images{
+    margin-top: 67px;
+    display: flex;
+}
+.images img{
+    margin-right: 29px;
+}
+.end{
+    display: flex;
+}
+.end p{
+    margin-right: 55px;
+    font-family: 'Open Sans';
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+}
+footer{
+    margin-top: 80px;
+    margin-bottom: 80px;
+}
