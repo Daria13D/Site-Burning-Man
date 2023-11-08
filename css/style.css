@@ -1,137 +1,283 @@
 body {
-    padding: 0;
-    margin: 0;
-    font-family: 'Anton', sans-serif;
-    color: 000;
-    font-size: 16px;
+  padding: 0;
+  margin: 0;
+  font-family: "Anton", sans-serif;
+  color: 000;
+  font-size: 16px;
 }
-h1, h2, h3, h4, h5, h6 {
-    padding: 0;
-    margin: 0;
-    text-transform: uppercase;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  padding: 0;
+  margin: 0;
+  text-transform: uppercase;
 }
-.offer h1{
-    color:white;
-    margin-top: -30px; 
-    font-weight: 400;
-    font-size: 100px;
-    line-height: 151px;
+.offer h1 {
+  color: white;
+  margin-top: -30px;
+  font-weight: 400;
+  font-size: 100px;
+  line-height: 151px;
 }
-h2{
-    font-weight: 400;
-    font-size: 50px;
-    line-height: 75px;
+h2 {
+  font-weight: 400;
+  font-size: 50px;
+  line-height: 75px;
 }
-h3{
-    font-weight: 400;
-    font-size: 25px;
-    line-height: 38px;
+h3 {
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 38px;
 }
-.offer p{
-    color:white;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 45px;
-    letter-spacing: 0.1em;
+.offer p {
+  color: white;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 45px;
+  letter-spacing: 0.1em;
 }
-ul, li {
-    display: block;
-    padding: 0;
-    margin: 0;
+ul,
+li {
+  display: block;
+  padding: 0;
+  margin: 0;
 }
 .container {
-    margin-right: 216px;
-    width: 1170px;
-    /*позиционирование по центру*/
-    margin: 0 auto;
-    padding-top: 57px;
+  margin-right: 216px;
+  margin-left: 216px;
+  width: 1170px;
+  /*позиционирование по центру*/
+  margin: 0 auto;
+  padding-top: 57px;
 }
 .header {
-    background: url('../images/header-bg.jpg') no-repeat center top/cover;
-    height: 900px;
+  background: url("../images/header-bg.jpg") no-repeat center top/cover;
+  height: 900px;
 }
 .header a {
-    color: white;
+  color: white;
 }
-.menu {
-    display: flex;
-}
-.menu li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: 14px;
-    letter-spacing: 0.1em;
-}
-.menu li {
-    margin-right: 40px;
-}
-.logo {
-    margin-right: 69px;
+.head {
+  display: flex;
+  align-items: center;
 }
 .tel {
-    font-size: 17px;
-    text-decoration: none;
-    margin-left: auto;
-    letter-spacing: 0.1em; 
+  margin-left: auto;
+}
+.menu {
+  display: flex;
+  text-decoration: none;
+}
+.menu li :hover {
+  border-bottom: 1px solid white;
+}
+.btn:hover {
+  color: #1b2356;
+  background-color: white;
+}
+.menu li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+}
+.menu li {
+  transition: 1s;
+  margin-right: 40px;
+}
+.logo {
+  margin-right: 69px;
+}
+.tel {
+  font-size: 17px;
+  text-decoration: none;
+  margin-left: auto;
+  letter-spacing: 0.1em;
+}
+.tel-burger {
+  display: none;
+  text-decoration: none;
+}
+.burger {
+  display: none;
 }
 .nav {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
-.offer{
-    margin-top: 216px;
+.offer {
+  margin-top: 216px;
 }
-.btn{
-    margin-top: 19px; 
-    font-family: 'Anton', sans-serif;
-    text-decoration: none;
-    color: white;
-    font-size: 17px;
+.btn {
+  transition: 1s;
+  margin-top: 19px;
+  font-family: "Anton", sans-serif;
+  text-decoration: none;
+  color: white;
+  font-size: 17px;
+  text-align: center;
+  padding: 17px 23px;
+  letter-spacing: 0.1em;
+  display: block;
+  position: absolute;
+  width: 238px;
+  border: 1px solid #ffffff;
+}
+.about {
+  margin-top: 56px;
+}
+.about p {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+}
+.text-block {
+  display: flex;
+  margin-top: 58px;
+}
+.text-one {
+  margin-right: 36px;
+}
+.text-one p {
+  margin-top: 19px;
+}
+.images {
+  margin-top: 67px;
+  display: flex;
+}
+.images img {
+  margin-right: 29px;
+}
+.end {
+  display: flex;
+}
+.end p {
+  margin-right: 55px;
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 20px;
+}
+footer {
+  margin-top: 80px;
+  margin-bottom: 80px;
+}
+
+@media (max-width: 1200px) {
+  body {
+    overflow-x: hidden;
+  }
+  .container {
+    width: 900px;
+    margin: 0 auto;
+    padding-top: 57px;
+  }
+  nav {
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    width: 600px;
+  }
+  .images {
+    flex-wrap: wrap;
+  }
+  #img2,
+  #img3 {
+    margin-right: 0;
+  }
+  #img3 {
+    margin-top: 20px;
+  }
+  .end p {
     text-align: center;
-    padding: 17px 23px;
-    letter-spacing: 0.1em; 
-    display: block;
+    align-items: center;
+  }
+}
+@media (max-width: 640px) {
+  .container {
+    width: 500px;
+  }
+  .header {
+    position: relative;
+  }
+  .menu {
+    top: 120px;
     position: absolute;
-    width: 238px;
-    border: 1px solid #FFFFFF;
+    display: block;
+    right: -200px;
+    transition: 1.5s;
+  }
+  .active {
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: #1b2356;
+    top: 120px;
+    position: absolute;
+    display: block;
+    right: 0px;
+    transition: 1.5s;
+  }
+  .menu li :hover {
+    border-bottom: 1px solid white;
+  }
+  .active li :hover {
+    border-bottom: 1px solid white;
+  }
+  .tel-burger {
+    display: block;
+  }
+  .tel {
+    display: none;
+  }
+  .burger {
+    cursor: pointer;
+    display: block;
+    transition: 1s;
+  }
+  .burger:hover {
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 5px 5px;
+  }
+  .burger img {
+    width: 40px;
+  }
+  .head {
+    justify-content: space-between;
+  }
+  .images img {
+    width: 300px;
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  #img3 {
+    margin-top: 0;
+    width: 100%;
+  }
+  #img1,
+  #img2 {
+    width: 250px;
+  }
 }
-.about{
-    margin-top: 56px;
+@media (max-width: 520px) {
+  .container {
+    width: 350px;
+  }
 }
-.about p{
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 26px;
+@media (max-width: 370px) {
+  .container {
+    width: 300px;
+  }
 }
-.text-block{
-    display: flex;
-    margin-top: 58px;
-}
-.text-one{
-    margin-right: 36px;
-}
-.text-one p{
-    margin-top: 19px;
-}
-.images{
-    margin-top: 67px;
-    display: flex;
-}
-.images img{
-    margin-right: 29px;
-}
-.end{
-    display: flex;
-}
-.end p{
-    margin-right: 55px;
-    font-family: 'Open Sans';
-    font-weight: 400;
-    font-size: 15px;
-    line-height: 20px;
-}
-footer{
-    margin-top: 80px;
-    margin-bottom: 80px;
+@media (max-width: 520px) {
+  .container {
+    width: 350px;
+  }
 }
